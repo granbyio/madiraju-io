@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* Remove default margins/padding on html/body */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #2b2b2b;
+  font-family: 'Lato'; 
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* A hero container that fills the entire viewport */
+.hero {
+  width: 100%;
+  height: 100vh; /* full viewport height */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: top;
+  padding-top: 140px; 
+  padding-left: 100px;
+}
+/* For smaller screens, reduce the padding */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 80px; 
+    padding-left: 50px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* For medium-sized screens (like tablets), adjust padding slightly */
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 120px; 
+    padding-left: 80px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.hero-title {
+  color: #f09c35; 
+  font-size: 71px;
+  margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+  color: #F6F7EF;
+  font-size: 31px; 
+  margin-bottom: 2rem;
+}
+.hero-icons {
+  display: flex;
+  color: #F6F7EF;
+  gap: 1rem; 
+}
+.hero-icons img,
+.hero-icons ion-icon {
+  font-size: 32px;
+  color: #F6F7EF;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.hero-icons ion-icon:hover,
+.hero-icons img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
