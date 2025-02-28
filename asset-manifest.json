@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/madiraju-io/static/css/main.a92428f7.css",
+    "main.js": "/madiraju-io/static/js/main.b0a0d4da.js",
+    "static/js/453.71fe37bf.chunk.js": "/madiraju-io/static/js/453.71fe37bf.chunk.js",
+    "index.html": "/madiraju-io/index.html",
+    "main.a92428f7.css.map": "/madiraju-io/static/css/main.a92428f7.css.map",
+    "main.b0a0d4da.js.map": "/madiraju-io/static/js/main.b0a0d4da.js.map",
+    "453.71fe37bf.chunk.js.map": "/madiraju-io/static/js/453.71fe37bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a92428f7.css",
+    "static/js/main.b0a0d4da.js"
+  ]
+}
