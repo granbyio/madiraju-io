@@ -19,26 +19,6 @@ body {
   padding-top: 140px;
   padding-left: 100px;
 }
-/* For smaller screens */
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 80px;
-    padding-left: 30px;
-    font-size: 38px;
-    padding-right: 15px;
-  }
-  .hero-subtitle {
-    font-size: 25px;
-  }
-}
-
-/* For medium-sized screens (like tablets), adjust padding slightly */
-@media (max-width: 1024px) {
-  .hero {
-    padding-top: 120px;
-    padding-left: 80px;
-  }
-}
 
 .hero-title {
   color: #f09c35;
@@ -68,4 +48,26 @@ body {
 .hero-icons img:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
+}
+/* For smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-subtitle {
+    font-size: 20px;
+  }
+}
+
+/* For medium-sized screens (like tablets), adjust padding slightly */
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 120px;
+    padding-left: 70px;
+  }
 }
