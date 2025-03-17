@@ -3,6 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from "react-gtag";
+
+const GA_TRACKING_ID = "G-EGDFZVP3NK";
+ReactGA.initialize(GA_TRACKING_ID);
+
+const addGoogleAnalytics = () => {
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+  document.head.appendChild(script);
+
+  const scriptContent = document.createElement("script");
+  scriptContent.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_TRACKING_ID}');
+  `;
+  document.head.appendChild(scriptContent);
+};
+
+addGoogleAnalytics();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
