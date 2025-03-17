@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ReactGA from "react-gtag";
+import ReactGA from "react-ga4";
 
 const GA_TRACKING_ID = "G-EGDFZVP3NK";
 ReactGA.initialize(GA_TRACKING_ID);
