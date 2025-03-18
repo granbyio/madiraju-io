@@ -6,12 +6,19 @@ import { Helmet } from 'react-helmet-async';
 function App() {
   return (
     <>
-    {/* Helmet for SEO Metadata */}
+    
     <Helmet>
-      <title> Sandilya Madiraju Personal Portfolio </title>
-      <meta name="description" content="Sandilya Madiraju Personal Portfolio. Github, LinkedIn, Blog, and Email!" />
+      {/* SEO Metadata */}
+      <title> Sandilya Madiraju</title>
+      <meta name="description" content="Sandi Madiraju Website" />
       <meta name="keywords" content="sandilya, madiraju, sandi, product management, technology, innovation, leadership, growth, strategy" />
-      <meta name="robots" content="index, follow" />
+      {/*<meta name="robots" content="index, follow" />*/}
+
+      {/* OG & iphone SEO Metadata */}
+      <meta property="og:title" content="Sandilya Madiraju" />
+        <meta property="og:description" content="Sandi Madiraju Website" />
+        <meta property="og:image" content="public/og-image.png" />
+        <meta property="og:url" content="https://www.madiraju.io" />
     </Helmet>
 
     {/* Main Website Content */}
