@@ -28,11 +28,11 @@ function App() {
         product, technology &amp; 
         <span className="dynamic-text">
         <Typewriter
-            words={[' strategy', ' growth', ' design', ' business', ' innovation', ' leadership', ]}
+            words={[ ' analogies', ' strategy', ' growth', ' design', ' business', ' innovation', ' leadership']}
             loop={true}
-            typeSpeed={40}
+            typeSpeed={70}
             deleteSpeed={100}
-            delaySpeed={3000}
+            delaySpeed={1000}
           />
         </span>
         </p>
